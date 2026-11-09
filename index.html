@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>道歉与关系修复话术包 · 8 个场景 24 句补救话术</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{background:#F1EAE1}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",sans-serif;
+  color:#33403D;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.app{max-width:430px;min-height:100vh;margin:0 auto;background:#FAF7F2;position:relative;overflow:hidden}
+.pad{padding:0 20px 50px}
+
+/* ---------- 通用 ---------- */
+.eyebrow{font-size:12px;letter-spacing:.18em;color:#9AA8A4;font-weight:600}
+.h1{font-size:29px;line-height:1.28;font-weight:800;letter-spacing:-.01em}
+.h2{font-size:18px;font-weight:800;margin:0 0 12px;display:flex;align-items:center;gap:8px}
+.h2::before{content:"";width:4px;height:16px;border-radius:3px;background:var(--teal)}
+.h3{font-size:15px;font-weight:800;margin:0 0 8px}
+.sub{color:#63736F;font-size:14px}
+.card{background:#fff;border-radius:22px;padding:20px 18px;box-shadow:0 6px 22px rgba(74,90,84,.07)}
+.tag{display:inline-block;padding:4px 11px;border-radius:999px;font-size:12px;font-weight:700;background:#EAF3F0;color:#4E8C84}
+.tag.a{background:#FBEADC;color:#B46B3C}.tag.b{background:#E4F0ED;color:#4E8C84}
+.tag.c{background:#ECE9F7;color:#6E65A8}.tag.d{background:#E3ECF5;color:#4B7196}
+.rule{height:1px;background:#EFE8DF;margin:16px 0}
+.muted{color:#8C9A96;font-size:12.5px;line-height:1.75}
+.lead{color:#63736F;font-size:14.5px}
+
+/* ---------- 首页 ---------- */
+.hero{position:relative;padding:42px 0 6px;text-align:center}
+.blob{position:absolute;top:-10px;left:50%;transform:translateX(-50%);width:200px;height:200px;
+  background:radial-gradient(circle at 35% 30%,#FBE3CE,#F6D5C2 45%,#DCEBE6 100%);
+  filter:blur(7px);opacity:.7;z-index:0;pointer-events:none}
+.hero>*{position:relative;z-index:1}
+.hero .h1{margin:12px 0 8px}
+.hero .lead{color:#63736F;font-size:14.5px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:18px 0 2px}
+.chip{background:#fff;border:1px solid #EEE5DA;border-radius:999px;padding:6px 13px;font-size:12.5px;color:#5C6B67;font-weight:600}
+.tipbar{display:flex;gap:9px;align-items:flex-start;background:#EAF4F1;border-radius:16px;padding:13px 14px;margin:20px 0 0}
+.tipbar .ic{flex:0 0 26px;width:26px;height:26px;border-radius:9px;background:#71B0A4;color:#fff;font-size:14px;font-weight:800;
+  display:flex;align-items:center;justify-content:center}
+.tipbar .tx{flex:1;font-size:13px;color:#4B5C58;line-height:1.7}
+
+/* ---------- 速查表 ---------- */
+.quick{background:#fff;border-radius:22px;padding:16px 12px 12px;box-shadow:0 6px 22px rgba(74,90,84,.07);margin-top:16px}
+.qt{width:100%;border-collapse:collapse;table-layout:fixed}
+.qt th,.qt td{border-bottom:1px dashed #EFE8DF;padding:9px 6px;vertical-align:top;text-align:left;font-size:11.5px;line-height:1.55}
+.qt th{font-size:11.5px;color:#8C9A96;font-weight:800;letter-spacing:.02em;padding-bottom:8px}
+.qt td:first-child,.qt th:first-child{width:64px;padding-left:4px}
+.qt tr:last-child td{border-bottom:0}
+.qt .sc{font-weight:800;color:#33403D;font-size:12px}
+.qt .g{color:#54635F}
+.qt .v1{color:#3F6F68;font-weight:700}
+.qt .v2{color:#8A6238;font-weight:700}
+.qt .v3{color:#5E5790;font-weight:700}
+.qtcap{display:flex;align-items:center;justify-content:space-between;margin:0 4px 6px}
+.qtcap .t{font-size:15px;font-weight:800}
+.qtcap .b{font-size:11px;color:#A5AFA9}
+
+/* ---------- 场景 ---------- */
+.sc-head{display:flex;align-items:flex-start;gap:12px;margin:30px 0 12px}
+.sc-no{flex:0 0 38px;width:38px;height:38px;border-radius:13px;background:linear-gradient(135deg,#71B0A4,#4E8C84);color:#fff;
+  font-size:16px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.sc-head .tt{flex:1}
+.sc-head .tt .n{font-size:19px;font-weight:800;line-height:1.35}
+.sc-head .tt .d{font-size:13px;color:#8C9A96;margin-top:3px}
+.ver{background:#fff;border-radius:20px;padding:17px 16px;box-shadow:0 6px 22px rgba(74,90,84,.07);margin-bottom:12px}
+.vhead{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:12px}
+.vhead .nm{font-size:15.5px;font-weight:800;display:flex;align-items:center;gap:8px}
+.vhead .dot{width:9px;height:9px;border-radius:50%}
+.copyall{border:1px solid #E9E1D6;background:#fff;border-radius:999px;padding:5px 12px;font-size:11.5px;color:#8C9A96;font-weight:700;cursor:pointer;font-family:inherit}
+.copyall:active{background:#F5F1EA}
+.line{display:flex;gap:10px;align-items:flex-start;padding:11px 12px;background:#FAF7F2;border:1px solid #EFE7DC;border-radius:14px;
+  margin-bottom:9px;cursor:pointer;transition:all .15s ease}
+.line:active{transform:scale(.99);border-color:#71B0A4;background:#EAF4F1}
+.line .tx{flex:1;font-size:14.5px;line-height:1.66;color:#3E4B48}
+.line .cp{flex:0 0 20px;width:20px;height:20px;border-radius:7px;background:#EAF3F0;color:#4E8C84;font-size:11px;font-weight:800;
+  display:flex;align-items:center;justify-content:center;margin-top:3px}
+.meta{margin-top:12px;border-radius:14px;padding:12px 13px;background:#F7F3EC}
+.meta .r{display:flex;gap:10px;align-items:flex-start;padding:5px 0;font-size:13px;line-height:1.7;color:#54635F}
+.meta .r .k{flex:0 0 74px;font-size:11.5px;font-weight:800;color:#9AA8A4;letter-spacing:.02em;padding-top:2px}
+.meta .r .v{flex:1}
+.meta .r .v em{font-style:normal;color:#33403D;font-weight:700}
+
+/* ---------- 自测 ---------- */
+.qwrap{background:#fff;border-radius:24px;padding:22px 18px;box-shadow:0 8px 26px rgba(74,90,84,.08)}
+.qbar{height:7px;border-radius:99px;background:#EBE3D9;overflow:hidden;margin-bottom:16px}
+.qbar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,#8FC7BC,#E9A178);transition:width .3s ease}
+.qcnt{font-size:12.5px;color:#8C9A96;font-weight:700;margin-bottom:9px}
+.qcnt b{color:#4E8C84;font-size:15px}
+.qtext{font-size:18px;font-weight:700;line-height:1.55;margin-bottom:16px}
+.opts{display:flex;flex-direction:column;gap:10px}
+.opt{display:flex;gap:11px;align-items:flex-start;text-align:left;width:100%;background:#FAF7F2;border:1.5px solid #EFE7DC;
+  border-radius:16px;padding:13px 14px;font-size:14.5px;line-height:1.6;color:#3E4B48;cursor:pointer;font-family:inherit;transition:all .15s ease}
+.opt:active{transform:scale(.99)}
+.opt .k{flex:0 0 23px;width:23px;height:23px;border-radius:8px;background:#EDE5DA;color:#8C9A96;font-size:12.5px;font-weight:800;
+  display:flex;align-items:center;justify-content:center;margin-top:2px}
+.opt.sel{border-color:#71B0A4;background:#EAF4F1}
+.opt.sel .k{background:#71B0A4;color:#fff}
+.backbtn{border:0;background:transparent;color:#8C9A96;font-size:13.5px;font-weight:600;cursor:pointer;font-family:inherit;padding:2px 0;margin-top:14px}
+.res-hero{border-radius:22px;padding:24px 20px;position:relative;overflow:hidden}
+.res-hero .kicker{font-size:12px;letter-spacing:.16em;font-weight:700;opacity:.78}
+.res-hero .tname{font-size:27px;font-weight:900;margin:8px 0 4px}
+.res-hero .oneline{font-size:14.5px;line-height:1.75;margin-top:12px}
+.res-list{margin-top:16px;display:flex;flex-direction:column;gap:10px}
+.res-item{background:#fff;border-radius:16px;padding:13px 14px;display:flex;gap:11px;align-items:flex-start;box-shadow:0 4px 16px rgba(74,90,84,.06)}
+.res-item .ic{flex:0 0 26px;width:26px;height:26px;border-radius:9px;color:#fff;font-size:13px;font-weight:800;
+  display:flex;align-items:center;justify-content:center}
+.res-item .tx{flex:1;font-size:14px;line-height:1.72;color:#4B5C58}
+.res-item .tx b{display:block;color:#33403D;font-size:14.5px;margin-bottom:3px}
+.rbtn{display:block;width:100%;padding:15px;border:0;border-radius:17px;font-size:16px;font-weight:800;cursor:pointer;font-family:inherit;margin-top:11px}
+.rbtn.p{background:linear-gradient(135deg,#71B0A4,#4E8C84);color:#fff;box-shadow:0 8px 20px rgba(78,140,132,.24)}
+.rbtn.s{background:#fff;border:1px solid #E9E1D6;color:#6B7A76}
+
+.foot{text-align:center;color:#B0B8B4;font-size:11.5px;line-height:1.85;margin-top:26px}
+.toast{position:fixed;left:50%;bottom:40px;transform:translateX(-50%) translateY(20px);background:rgba(40,52,49,.93);
+  color:#fff;padding:11px 20px;border-radius:14px;font-size:14px;opacity:0;pointer-events:none;transition:all .28s ease;z-index:99}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+@media(min-width:431px){.app{box-shadow:0 0 60px rgba(80,90,84,.10)}}
+
+/* ---------- 产品14 追加 ---------- */
+.sectnav{display:flex;gap:8px;margin:18px 0 0}
+.sectnav button{flex:1;border:1px solid #E9E1D6;background:#fff;border-radius:14px;padding:11px 8px;font-size:13px;font-weight:700;color:#5C6B67;cursor:pointer;font-family:inherit}
+.sectnav button:active{background:#F5F1EA}
+.disc{background:#F7F3EC;border-radius:16px;padding:13px 14px;margin-top:18px;font-size:12.5px;line-height:1.8;color:#7C8A86}
+.disc b{color:#54635F}
+.line .tx .lb{font-size:11.5px;color:#9AA7A3;font-weight:800;margin-right:6px}
+.react{margin-top:14px;padding:12px 13px;background:#FAF6F0;border-radius:14px;border:1px dashed #E4DCD0}
+.react .aq{font-size:12.5px;line-height:1.75;color:#6E7D79;margin-bottom:8px}
+.react .aq b{color:#4B5C58}
+.bars{background:#fff;border-radius:20px;padding:16px 16px 18px;box-shadow:0 6px 22px rgba(74,90,84,.07);margin-top:14px}
+.bars .bt{font-size:13px;font-weight:800;color:#33403D;margin-bottom:14px}
+.barrow{margin-bottom:12px}
+.barrow .bl{display:flex;justify-content:space-between;font-size:12.5px;color:#54635F;font-weight:700;margin-bottom:6px}
+.barrow .bl span:last-child{color:#4E8C84;font-weight:800}
+.bar{height:9px;border-radius:99px;background:#EBE3D9;overflow:hidden}
+.bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,#8FC7BC,#E9A178)}
+.scorebar{height:7px;border-radius:99px;background:#EBE3D9;overflow:hidden;margin:14px 0 6px}
+.scorebar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,#8FC7BC,#E9A178)}
+.scoretxt{font-size:12px;color:#8C9A96;font-weight:700}
+.whycard{background:#fff;border-radius:20px;padding:16px 16px 6px;box-shadow:0 6px 22px rgba(74,90,84,.07);margin-top:12px}
+.whycard .wh{font-size:14.5px;font-weight:800;color:#33403D;line-height:1.6}
+.whycard p{font-size:13px;line-height:1.85;color:#54635F;margin:9px 0 12px}
+.judge{display:flex;gap:11px;align-items:flex-start;margin-top:12px}
+.judge .ic{width:24px;height:24px;flex:0 0 24px;border-radius:9px;background:#EAF3F0;color:#4E8C84;font-size:12.5px;font-weight:800;display:flex;align-items:center;justify-content:center;margin-top:2px}
+.judge .tx{font-size:13px;line-height:1.85;color:#54635F}
+.judge .tx b{color:#33403D}
+.pushrow{background:#fff;border-radius:18px;padding:14px 15px;box-shadow:0 6px 22px rgba(74,90,84,.07);margin-top:12px}
+.pushrow .q{font-size:12.5px;color:#8C9A96;font-weight:700;margin-bottom:9px}
+.pushrow .a{font-size:13px;line-height:1.8;color:#4B5C58}
+.stepcard{background:#fff;border-radius:18px;padding:15px 16px;box-shadow:0 6px 22px rgba(74,90,84,.07);margin-top:12px}
+.stepcard .sh{font-size:13.5px;font-weight:800;color:#33403D;margin-bottom:8px}
+.stepcard p{font-size:12.8px;line-height:1.85;color:#54635F;margin:0 0 7px}
+.stepcard p:last-child{margin-bottom:0}
+</style>
+</head>
+<body>
+<div class="app">
+
+  <section class="pad" id="s-home">
+    <div class="hero">
+      <div class="blob"></div>
+      <div class="eyebrow">APOLOGY KIT</div>
+      <h1 class="h1">道歉与关系修复话术包</h1>
+      <p class="lead">说错话、得罪人之后怎么往下走<br>8 个场景、24 句补救话术、12 条追问澄清</p>
+      <div class="chips">
+        <span class="chip">8 个场景</span>
+        <span class="chip">24 句可复制</span>
+        <span class="chip">12 条追问澄清</span>
+        <span class="chip">附 4 题补救小测</span>
+      </div>
+    </div>
+
+    <div class="tipbar">
+      <div class="ic">i</div>
+      <div class="tx">点任意一句就能复制，粘到聊天框里改两个字就能用。顶上的速查表适合补救前扫一眼。</div>
+    </div>
+
+    <div class="quick">
+      <div class="qtcap"><div class="t">30 秒速查表</div><div class="b">要补救前先扫一眼</div></div>
+      <table class="qt">
+        <thead><tr><th>场景</th><th>什么时候用</th><th>一句话怎么说</th><th>补一个动作</th></tr></thead>
+        <tbody>
+<tr><td class="sc">当面说错话</td><td class="g v1">话已出口收不回</td><td class="g v2">刚才那句我说错了，抱歉，我重新说一遍</td><td class="g v3">马上更正事实</td></tr>
+<tr><td class="sc">发错消息被截图</td><td class="g v1">字已经被人看见</td><td class="g v2">我不该发到这个群，内容跟你有关，我现在撤回</td><td class="g v3">主动去群里说明</td></tr>
+<tr><td class="sc">反驳过领导</td><td class="g v1">会后那口气没散</td><td class="g v2">会上我语气太冲，那句我收回</td><td class="g v3">24 小时内补结论</td></tr>
+<tr><td class="sc">被同事甩锅</td><td class="g v1">复盘时责任落到你头上</td><td class="g v2">我认我该负的那部分，别的按记录来</td><td class="g v3">只认自己那一份</td></tr>
+<tr><td class="sc">被客户投诉</td><td class="g v1">对方正在发火</td><td class="g v2">这次没达到您的要求，是我们的问题</td><td class="g v3">给出时间点</td></tr>
+<tr><td class="sc">群里冷场翻车</td><td class="g v1">一句话没人接</td><td class="g v2">我那句没接住，我换个话题</td><td class="g v3">一句自嘲就收</td></tr>
+<tr><td class="sc">家人当众戳你</td><td class="g v1">亲戚当着人说你混得差</td><td class="g v2">我不跟你顶，我们回屋单独聊</td><td class="g v3">把战场挪到私下</td></tr>
+<tr><td class="sc">朋友误会不解释</td><td class="g v1">对方认定你变了</td><td class="g v2">这事我该早点说清楚，我今天讲给你听</td><td class="g v3">先认该说不说</td></tr>
+        </tbody>
+      </table>
+      <div class="rule"></div>
+      <div class="muted">用法：先认场景，再挑一句更贴近的改两个字。同一个场景三档力度不同，按事情大小和你们的关系远近选。</div>
+    </div>
+
+    <div class="sectnav">
+      <button onclick="goSection('s-scenes')">看 24 句补救话术</button>
+      <button onclick="showTest()">做补救踩坑小测</button>
+    </div>
+
+    <div class="disc"><b>使用说明</b><br>本资料为沟通参考，不构成专业心理评估、诊断或医疗建议。话术是参考句不是标准答案，请按你面对的人和场合调整。</div>
+  </section>
+
+  <section class="pad" id="s-why">
+    <div class="sc-head">
+      <div class="sc-no">1</div>
+      <div class="tt"><div class="n">你为什么越补救越糟</div><div class="d">补救本身不难，难的是把它做成一次道歉而不是一场说明会。</div></div>
+    </div>
+<div class="whycard"><div class="wh">把道歉说成了长篇解释</div><p>解释一旦超过三句，听的人就开始挑里面哪句不对，注意力从「你错在哪」转到「你为什么错」。补救现场要做的是让对方尽快确认：这件事到此为止了。</p></div>
+<div class="whycard"><div class="wh">一次说太多件事</div><p>一口气交代五六件过错，对方要处理的信息量太大，收尾通常只记住其中一件，而且是刺眼的那件。一次只处理一件，说完等对方接。</p></div>
+<div class="whycard"><div class="wh">在对方没开口前就抢着道歉</div><p>有些人还没说什么，你先自己把事情全抖出来，等于替对方把定性做完了。对方准备好的那套话没了出口，火也就落不下来。</p></div>
+<div class="whycard"><div class="wh">道歉之后没有动作</div><p>嘴上说一百句抱歉，不如把一件具体的事改掉。补救的落点是对方下次不用再提醒你。</p></div>
+    <div class="disc"><b>使用说明</b><br>本资料为沟通参考，不构成专业心理评估、诊断或医疗建议。</div>
+  </section>
+
+  <section class="pad" id="s-judge">
+    <div class="sc-head">
+      <div class="sc-no">2</div>
+      <div class="tt"><div class="n">补救前的 30 秒判断</div><div class="d">开口之前先分清四件事，能省掉大半的越描越黑。</div></div>
+    </div>
+<div class="judge"><div class="ic">1</div><div class="tx"><b>这件事要补救，还是让它过去？</b>看后果。如果已经影响对方的判断、钱或关系，补救；如果只是你心里过不去，放着。</div></div>
+<div class="judge"><div class="ic">2</div><div class="tx"><b>对方现在是想听解释，还是想看你动作？</b>多数人在气头上时听不进解释。先给一个具体动作，解释放在动作后面。</div></div>
+<div class="judge"><div class="ic">3</div><div class="tx"><b>你要认的是错，还是认自己那一份？</b>两种认法差别很大。认错是「我错了」，认份是「这部分我负责」。别把不属于自己的也认下来。</div></div>
+<div class="judge"><div class="ic">4</div><div class="tx"><b>这件事有没有第三方会看到？</b>有的话补救要在公开场合做一次，只私下说等于没做；没有的话私下说更省事。</div></div>
+    <div class="disc"><b>使用说明</b><br>本资料为沟通参考，不构成专业心理评估、诊断或医疗建议。</div>
+  </section>
+
+  <section class="pad" id="s-scenes">
+    <div class="sc-head">
+      <div class="sc-no">3</div>
+      <div class="tt"><div class="n">八场景二十四句</div><div class="d">每个场景三句补救话术，外加对方可能的反应和你怎么接。</div></div>
+    </div>
+<div class="sc-head" id="sc1">
+<div class="sc-no">1</div>
+<div class="tt"><div class="n">当面说错话</div><div class="d">叫错了名字、把数字说岔、把一句玩笑说成了认真话。话已经出口，收不回来，只能往下走。</div>
+</div>
+<div class="ver" id="v1">
+<div class="vhead"><div class="nm"><span class="dot"></span>三句补救话术</div><button class="copyall" data-group="v1">复制整段</button></div>
+<div class="line" data-copy="刚才那句话我说错了，抱歉。我重新说一遍：上季度是三十二万，不是三万二。"><div class="tx"><span class="lb">认真道歉</span>刚才那句话我说错了，抱歉。我重新说一遍：上季度是三十二万，不是三万二。</div><div class="cp">拷</div></div>
+<div class="line" data-copy="刚那句我讲错了，给你添了判断的麻烦。我把正确数字整理成一页发你，你按这页看。"><div class="tx"><span class="lb">道歉加补救</span>刚那句我讲错了，给你添了判断的麻烦。我把正确数字整理成一页发你，你按这页看。</div><div class="cp">拷</div></div>
+<div class="line" data-copy="我刚才口误了，那事不是那个数，我说岔了——以我后来发你的这版为准。"><div class="tx"><span class="lb">轻轻带过</span>我刚才口误了，那事不是那个数，我说岔了——以我后来发你的这版为准。</div><div class="cp">拷</div></div>
+<div class="react">
+<div class="aq"><b>对方可能的反应：</b>「没事，我们继续。」——多数人当场给你台阶，但心里已经记了一笔。</div>
+<div class="line" data-copy="对方说没事的时候别顺着说「那就好」，补一句「我把这个点改掉，不会再拿错的数据来」，再往下走。"><div class="tx"><span class="lb">你这么接</span>对方说没事的时候别顺着说「那就好」，补一句「我把这个点改掉，不会再拿错的数据来」，再往下走。</div><div class="cp">拷</div></div>
+</div>
+</div>
+<div class="sc-head" id="sc2">
+<div class="sc-no">2</div>
+<div class="tt"><div class="n">微信发错消息被截图</div><div class="d">该发给甲的话发到了乙的群里，或者私聊里的话被人截图转了出去。屏幕上的字比嘴边的字更容易被断章取义。</div>
+</div>
+<div class="ver" id="v2">
+<div class="vhead"><div class="nm"><span class="dot"></span>三句补救话术</div><button class="copyall" data-group="v2">复制整段</button></div>
+<div class="line" data-copy="刚才那条消息我不该发到群里，内容是关于你的那件事。我现在在群里说明一下，并且删掉。"><div class="tx"><span class="lb">认真道歉</span>刚才那条消息我不该发到群里，内容是关于你的那件事。我现在在群里说明一下，并且删掉。</div><div class="cp">拷</div></div>
+<div class="line" data-copy="发错群了，是我的错。这条我马上撤回，同时单独跟你说一句：我想说的原话是「下周把材料给你」。"><div class="tx"><span class="lb">道歉加补救</span>发错群了，是我的错。这条我马上撤回，同时单独跟你说一句：我想说的原话是「下周把材料给你」。</div><div class="cp">拷</div></div>
+<div class="line" data-copy="串群了，那条是关于工作的，跟你没关系，别放心上——我现在撤回，避免误会。"><div class="tx"><span class="lb">轻轻带过</span>串群了，那条是关于工作的，跟你没关系，别放心上——我现在撤回，避免误会。</div><div class="cp">拷</div></div>
+<div class="react">
+<div class="aq"><b>对方可能的反应：</b>「你撤也没用，已经有人看到了。」——截图一旦传开，撤回只能止血，不能复原。</div>
+<div class="line" data-copy="别只说「我撤回」。补一句「如果有人在传，我可以在群里把事情说清楚，免得你被动」，把补救动作摆出来。"><div class="tx"><span class="lb">你这么接</span>别只说「我撤回」。补一句「如果有人在传，我可以在群里把事情说清楚，免得你被动」，把补救动作摆出来。</div><div class="cp">拷</div></div>
+</div>
+</div>
+<div class="sc-head" id="sc3">
+<div class="sc-no">3</div>
+<div class="tt"><div class="n">开会反驳过领导</div><div class="d">会上直接顶了一句leader的话，之后会议就安静了。会后没人提，但你知道那句话还悬着。</div>
+</div>
+<div class="ver" id="v3">
+<div class="vhead"><div class="nm"><span class="dot"></span>三句补救话术</div><button class="copyall" data-group="v3">复制整段</button></div>
+<div class="line" data-copy="今天会上我那句话说得太冲了，不该当众反驳您。我私下想跟您把那个方案再对一遍。"><div class="tx"><span class="lb">认真道歉</span>今天会上我那句话说得太冲了，不该当众反驳您。我私下想跟您把那个方案再对一遍。</div><div class="cp">拷</div></div>
+<div class="line" data-copy="会上那句话我收回，是我着急了。我把修改后的思路整理成两页，明早发您。"><div class="tx"><span class="lb">道歉加补救</span>会上那句话我收回，是我着急了。我把修改后的思路整理成两页，明早发您。</div><div class="cp">拷</div></div>
+<div class="line" data-copy="今天会上我语气不好，我补一句：那个问题我想清楚了，按您说的方向走，我下午就把稿子改出来。"><div class="tx"><span class="lb">轻轻带过</span>今天会上我语气不好，我补一句：那个问题我想清楚了，按您说的方向走，我下午就把稿子改出来。</div><div class="cp">拷</div></div>
+<div class="react">
+<div class="aq"><b>对方可能的反应：</b>「下次注意。」——如果只收到这三个字，事情算过去了；如果对方不说，也别追着问第二遍。</div>
+<div class="line" data-copy="会后 24 小时内主动补一次「结论 + 动作」，用行动替代第二句道歉。领导在意的是你接下来怎么做。"><div class="tx"><span class="lb">你这么接</span>会后 24 小时内主动补一次「结论 + 动作」，用行动替代第二句道歉。领导在意的是你接下来怎么做。</div><div class="cp">拷</div></div>
+</div>
+</div>
+<div class="sc-head" id="sc4">
+<div class="sc-no">4</div>
+<div class="tt"><div class="n">被同事甩锅</div><div class="d">项目出问题，复盘时责任被推到你头上，而那部分本来不是你的活。你当场可以争，也可以先认下来再查。</div>
+</div>
+<div class="ver" id="v4">
+<div class="vhead"><div class="nm"><span class="dot"></span>三句补救话术</div><button class="copyall" data-group="v4">复制整段</button></div>
+<div class="line" data-copy="这件事我认我该负的那部分——时间没提前说清。但那部分流程不是我在做，我手上有记录，想跟您单独对一下。"><div class="tx"><span class="lb">认真道歉</span>这件事我认我该负的那部分——时间没提前说清。但那部分流程不是我在做，我手上有记录，想跟您单独对一下。</div><div class="cp">拷</div></div>
+<div class="line" data-copy="延期是我没盯紧，这点我道歉。责任划分我建议按记录来，我把当时的排期表整理出来一起看。"><div class="tx"><span class="lb">道歉加补救</span>延期是我没盯紧，这点我道歉。责任划分我建议按记录来，我把当时的排期表整理出来一起看。</div><div class="cp">拷</div></div>
+<div class="line" data-copy="我这边确实有没做到位的地方。别的部分咱们按记录对，我不占您时间，今天先把能补的补上。"><div class="tx"><span class="lb">轻轻带过</span>我这边确实有没做到位的地方。别的部分咱们按记录对，我不占您时间，今天先把能补的补上。</div><div class="cp">拷</div></div>
+<div class="react">
+<div class="aq"><b>对方可能的反应：</b>「那就先按你说的处理吧。」——对方可能想息事宁人，也可能只是需要台阶。</div>
+<div class="line" data-copy="认领属于自己的那部分，但不要连带认下不属于自己的部分。追一句「这部分我配合，需要材料我今天就出」，把责任和动作分开。"><div class="tx"><span class="lb">你这么接</span>认领属于自己的那部分，但不要连带认下不属于自己的部分。追一句「这部分我配合，需要材料我今天就出」，把责任和动作分开。</div><div class="cp">拷</div></div>
+</div>
+</div>
+<div class="sc-head" id="sc5">
+<div class="sc-no">5</div>
+<div class="tt"><div class="n">被客户投诉</div><div class="d">客户在群里或电话里发了火，话说得很重。这时候先别解释流程，先把对方在意的那件事接住。</div>
+</div>
+<div class="ver" id="v5">
+<div class="vhead"><div class="nm"><span class="dot"></span>三句补救话术</div><button class="copyall" data-group="v5">复制整段</button></div>
+<div class="line" data-copy="这次交付没达到您要的样子，让您费神了，这是我们的责任。我今天内给您一个处理方案。"><div class="tx"><span class="lb">认真道歉</span>这次交付没达到您要的样子，让您费神了，这是我们的责任。我今天内给您一个处理方案。</div><div class="cp">拷</div></div>
+<div class="line" data-copy="延误和缺的那部分材料我们都记下了。我先补齐材料，再跟您约时间过一遍方案，责任我们不推。"><div class="tx"><span class="lb">道歉加补救</span>延误和缺的那部分材料我们都记下了。我先补齐材料，再跟您约时间过一遍方案，责任我们不推。</div><div class="cp">拷</div></div>
+<div class="line" data-copy="让您等久了，这点我先道歉。眼下我先把能做的做掉，晚上之前给您一个准话。"><div class="tx"><span class="lb">轻轻带过</span>让您等久了，这点我先道歉。眼下我先把能做的做掉，晚上之前给您一个准话。</div><div class="cp">拷</div></div>
+<div class="react">
+<div class="aq"><b>对方可能的反应：</b>「你到底能不能做？做不了我换人。」——对方要的是确定性，不是一句道歉。</div>
+<div class="line" data-copy="把话拉回可执行的部分：给出时间点、给出这一步的负责人、给出下一次反馈的时点。空口道歉接不住火气。"><div class="tx"><span class="lb">你这么接</span>把话拉回可执行的部分：给出时间点、给出这一步的负责人、给出下一次反馈的时点。空口道歉接不住火气。</div><div class="cp">拷</div></div>
+</div>
+</div>
+<div class="sc-head" id="sc6">
+<div class="sc-no">6</div>
+<div class="tt"><div class="n">群里冷场翻车</div><div class="d">群里你接了句玩笑，结果没人笑，或者有人阴阳了一句。几十号人看着，删也不是，不删也不是。</div>
+</div>
+<div class="ver" id="v6">
+<div class="vhead"><div class="nm"><span class="dot"></span>三句补救话术</div><button class="copyall" data-group="v6">复制整段</button></div>
+<div class="line" data-copy="我那句话没接住，让场面尴尬了。我把这条撤了，这事算我一段没打好招呼的插曲。"><div class="tx"><span class="lb">认真道歉</span>我那句话没接住，让场面尴尬了。我把这条撤了，这事算我一段没打好招呼的插曲。</div><div class="cp">拷</div></div>
+<div class="line" data-copy="刚那句我说的时机不对，扫了大家的兴。我换一句：今天这图挺有意思的，是谁做的？"><div class="tx"><span class="lb">道歉加补救</span>刚那句我说的时机不对，扫了大家的兴。我换一句：今天这图挺有意思的，是谁做的？</div><div class="cp">拷</div></div>
+<div class="line" data-copy="我插一句插歪了，重开：你们那边今天进度怎么样？"><div class="tx"><span class="lb">轻轻带过</span>我插一句插歪了，重开：你们那边今天进度怎么样？</div><div class="cp">拷</div></div>
+<div class="react">
+<div class="aq"><b>对方可能的反应：</b>「哈哈没事。」——多数人其实不介意，介意的是你被这句冷场困住后的反复解释。</div>
+<div class="line" data-copy="翻车后越解释越像在意。一句自嘲加一个新话题，然后闭嘴，让别人有台阶接下去。"><div class="tx"><span class="lb">你这么接</span>翻车后越解释越像在意。一句自嘲加一个新话题，然后闭嘴，让别人有台阶接下去。</div><div class="cp">拷</div></div>
+</div>
+</div>
+<div class="sc-head" id="sc7">
+<div class="sc-no">7</div>
+<div class="tt"><div class="n">家人一句话戳中</div><div class="d">亲戚或父母当众说了句「你看你现在混成什么样」，一句话把你这几年的难处摊在桌上。</div>
+</div>
+<div class="ver" id="v7">
+<div class="vhead"><div class="nm"><span class="dot"></span>三句补救话术</div><button class="copyall" data-group="v7">复制整段</button></div>
+<div class="line" data-copy="妈，刚才那句话我听着难受，我不跟你顶，但我想把自己的情况说清楚：我现在做的这个，年底能稳下来。"><div class="tx"><span class="lb">认真道歉</span>妈，刚才那句话我听着难受，我不跟你顶，但我想把自己的情况说清楚：我现在做的这个，年底能稳下来。</div><div class="cp">拷</div></div>
+<div class="line" data-copy="您那句话当着这么多人说我心里过不去。我不跟您争，您要是想听，我回屋单独跟您聊。"><div class="tx"><span class="lb">道歉加补救</span>您那句话当着这么多人说我心里过不去。我不跟您争，您要是想听，我回屋单独跟您聊。</div><div class="cp">拷</div></div>
+<div class="line" data-copy="我听见了，先不接这个话。吃饭吃饭，菜凉了。"><div class="tx"><span class="lb">轻轻带过</span>我听见了，先不接这个话。吃饭吃饭，菜凉了。</div><div class="cp">拷</div></div>
+<div class="react">
+<div class="aq"><b>对方可能的反应：</b>「我说的是实话，你还不让人说？」——家里人的反驳通常带着关心，只是包装成了刺。</div>
+<div class="line" data-copy="别在现场辩输赢。把战场挪到私下：单独聊一次，先接住情绪（「您是担心我」），再讲你的打算。"><div class="tx"><span class="lb">你这么接</span>别在现场辩输赢。把战场挪到私下：单独聊一次，先接住情绪（「您是担心我」），再讲你的打算。</div><div class="cp">拷</div></div>
+</div>
+</div>
+<div class="sc-head" id="sc8">
+<div class="sc-no">8</div>
+<div class="tt"><div class="n">朋友误会不解释</div><div class="d">朋友听信了别人传的话，认定你变了、认定你利用过他。对方不问你，你也一直没解释。</div>
+</div>
+<div class="ver" id="v8">
+<div class="vhead"><div class="nm"><span class="dot"></span>三句补救话术</div><button class="copyall" data-group="v8">复制整段</button></div>
+<div class="line" data-copy="我听说了你对我的误解，这事我该早点说清楚。我不想让你带着这个想法跟我处。"><div class="tx"><span class="lb">认真道歉</span>我听说了你对我的误解，这事我该早点说清楚。我不想让你带着这个想法跟我处。</div><div class="cp">拷</div></div>
+<div class="line" data-copy="当时我急着避嫌，没跟你讲，害得你从别人嘴里听到。这事摊开说清楚，你问什么我答什么。"><div class="tx"><span class="lb">道歉加补救</span>当时我急着避嫌，没跟你讲，害得你从别人嘴里听到。这事摊开说清楚，你问什么我答什么。</div><div class="cp">拷</div></div>
+<div class="line" data-copy="你这阵子是不是觉得我有点躲着你？是有一件事我之前没说，今天跟你交个底。"><div class="tx"><span class="lb">轻轻带过</span>你这阵子是不是觉得我有点躲着你？是有一件事我之前没说，今天跟你交个底。</div><div class="cp">拷</div></div>
+<div class="react">
+<div class="aq"><b>对方可能的反应：</b>「你早说啊，我误会你这么久。」——误会一旦成形，对方需要的不是道歉，是事实。</div>
+<div class="line" data-copy="先承认「我该说没说」这部分是你的责任，再讲清事实经过。顺序反了，对方会觉得你在推。"><div class="tx"><span class="lb">你这么接</span>先承认「我该说没说」这部分是你的责任，再讲清事实经过。顺序反了，对方会觉得你在推。</div><div class="cp">拷</div></div>
+</div>
+</div>
+    <div class="disc"><b>使用说明</b><br>本资料为沟通参考，不构成专业心理评估、诊断或医疗建议。</div>
+  </section>
+
+  <section class="pad" id="s-push">
+    <div class="sc-head">
+      <div class="sc-no">4</div>
+      <div class="tt"><div class="n">追问与澄清</div><div class="d">对方会回你十二种话，每句后面配一句能直接发出去的回法。</div></div>
+    </div>
+<div class="pushrow">
+<div class="q">对方会说：「你这是什么意思？」</div>
+<div class="a line" data-copy="没什么意思，就是刚才那句我说错了，抱歉。我重说一遍。"><div class="tx"><span class="lb">这么回</span>没什么意思，就是刚才那句我说错了，抱歉。我重说一遍。</div><div class="cp">拷</div></div>
+</div>
+<div class="pushrow">
+<div class="q">对方会说：「你是不是怪我？」</div>
+<div class="a line" data-copy="我不怪你，那部分本来就在我这儿。我只是想说清楚我改了什么。"><div class="tx"><span class="lb">这么回</span>我不怪你，那部分本来就在我这儿。我只是想说清楚我改了什么。</div><div class="cp">拷</div></div>
+</div>
+<div class="pushrow">
+<div class="q">对方会说：「行，那这事过去了。」</div>
+<div class="a line" data-copy="过去了，谢谢。我把这个点改掉，下次不会再拿错的东西来。"><div class="tx"><span class="lb">这么回</span>过去了，谢谢。我把这个点改掉，下次不会再拿错的东西来。</div><div class="cp">拷</div></div>
+</div>
+<div class="pushrow">
+<div class="q">对方会说：「你早干嘛去了？」</div>
+<div class="a line" data-copy="是我没做好，我现在补救。换成当时，我应该先说一声。"><div class="tx"><span class="lb">这么回</span>是我没做好，我现在补救。换成当时，我应该先说一声。</div><div class="cp">拷</div></div>
+</div>
+<div class="pushrow">
+<div class="q">对方会说：「所以你现在是怪我当时没说？」</div>
+<div class="a line" data-copy="不是，我是在说我自己没安排好。今天这部分我来扛。"><div class="tx"><span class="lb">这么回</span>不是，我是在说我自己没安排好。今天这部分我来扛。</div><div class="cp">拷</div></div>
+</div>
+<div class="pushrow">
+<div class="q">对方会说：「你到底想怎么样？」</div>
+<div class="a line" data-copy="我想把这事翻篇，但想让你知道我已经处理好了，不是嘴上说说。"><div class="tx"><span class="lb">这么回</span>我想把这事翻篇，但想让你知道我已经处理好了，不是嘴上说说。</div><div class="cp">拷</div></div>
+</div>
+<div class="pushrow">
+<div class="q">对方会说：「你这话什么意思，我搞不懂。」</div>
+<div class="a line" data-copy="我换个说法：错在我这边，责任我认，接下来我做什么我也说清楚。"><div class="tx"><span class="lb">这么回</span>我换个说法：错在我这边，责任我认，接下来我做什么我也说清楚。</div><div class="cp">拷</div></div>
+</div>
+<div class="pushrow">
+<div class="q">对方会说：「行吧，我不跟你计较。」</div>
+<div class="a line" data-copy="不用你替我开脱，该承担的我承担。你把手上要补的交给我就行。"><div class="tx"><span class="lb">这么回</span>不用你替我开脱，该承担的我承担。你把手上要补的交给我就行。</div><div class="cp">拷</div></div>
+</div>
+<div class="pushrow">
+<div class="q">对方会说：「你要是觉得委屈可以直说。」</div>
+<div class="a line" data-copy="我不委屈，委屈没意思。我要的是这件事别再往下滚。"><div class="tx"><span class="lb">这么回</span>我不委屈，委屈没意思。我要的是这件事别再往下滚。</div><div class="cp">拷</div></div>
+</div>
+<div class="pushrow">
+<div class="q">对方会说：「就这？一句道歉就完了？」</div>
+<div class="a line" data-copy="不止一句。我今晚把要改的两处改完，明天给你看前后对比。"><div class="tx"><span class="lb">这么回</span>不止一句。我今晚把要改的两处改完，明天给你看前后对比。</div><div class="cp">拷</div></div>
+</div>
+<div class="pushrow">
+<div class="q">对方会说：「你以后能不能注意点。」</div>
+<div class="a line" data-copy="能。这条我已经记下来了，下次同类的事我按流程走，不靠记性。"><div class="tx"><span class="lb">这么回</span>能。这条我已经记下来了，下次同类的事我按流程走，不靠记性。</div><div class="cp">拷</div></div>
+</div>
+<div class="pushrow">
+<div class="q">对方会说：「行，我知道了。」</div>
+<div class="a line" data-copy="知道了就好。我把这次的处理方式写成三行发你，以后按这个来。"><div class="tx"><span class="lb">这么回</span>知道了就好。我把这次的处理方式写成三行发你，以后按这个来。</div><div class="cp">拷</div></div>
+</div>
+    <div class="disc"><b>使用说明</b><br>本资料为沟通参考，不构成专业心理评估、诊断或医疗建议。</div>
+  </section>
+
+  <section class="pad" id="s-stop">
+    <div class="sc-head">
+      <div class="sc-no">5</div>
+      <div class="tt"><div class="n">什么时候该不补救</div><div class="d">有些事不动手比动手更省事，这里写清楚是哪三种。</div></div>
+    </div>
+<div class="stepcard"><div class="sh">对方已经说「没事了」「过去了」</div><p>那就收手。这时候再补充说明、补充解释，都会变成第二次打扰。留一句「谢谢您不计较」就够了。</p></div>
+<div class="stepcard"><div class="sh">事情本身没造成任何影响</div><p>纯粹是你自己心里不舒服，对方并不知情也没被波及。这种情况可以自我消化，不用把场面搞大。</p></div>
+<div class="stepcard"><div class="sh">你想道歉的对象是第三方</div><p>真正被你伤到的人如果不知情，你跑去找他说明情况，等于又拉了一个人进来。找到真正需要听到的那一方，一次说清。</p></div>
+    <div class="disc"><b>使用说明</b><br>本资料为沟通参考，不构成专业心理评估、诊断或医疗建议。</div>
+  </section>
+
+  <section class="pad" id="s-close">
+    <div class="sc-head">
+      <div class="sc-no">6</div>
+      <div class="tt"><div class="n">补救之后怎么收尾</div><div class="d">补救的落点在后面这几步，做完才算真的过去。</div></div>
+    </div>
+<div class="stepcard"><div class="sh">把结论落到一句可核对的话上</div><p>「我改完了，明天下午三点发你」比「我以后注意」有用得多，因为对方能核对。</p></div>
+<div class="stepcard"><div class="sh">主动更新一次，不等对方来问</div><p>补救后第二天把处理结果主动同步一次。很多人不追问，不是因为满意，是不想再提。</p></div>
+<div class="stepcard"><div class="sh">别在同一件事上反复道歉</div><p>一次正式道歉、一次动作说明，够了。第三次提起会让对方重新回到那个难堪的现场。</p></div>
+<div class="stepcard"><div class="sh">留一个不沉重的后续</div><p>过几天用一件平常的小事跟对方重新接上话，比如同步一个跟工作有关的小进展，让关系回到正常频道。</p></div>
+    <div class="disc"><b>使用说明</b><br>本资料为沟通参考，不构成专业心理评估、诊断或医疗建议。</div>
+  </section>
+
+  <section class="pad" id="s-test">
+    <div class="sc-head">
+      <div class="sc-no">测</div>
+      <div class="tt"><div class="n">你补救时容易踩的坑</div><div class="d">4 道题，看你是先解释、补救有度，还是拖太久。</div></div>
+    </div>
+    <div class="qwrap" id="qwrap"></div>
+    <div class="disc"><b>使用说明</b><br>本资料为沟通参考，不构成专业心理评估、诊断或医疗建议。结果只反映你这次的选择。</div>
+  </section>
+
+  <div class="foot">
+    道歉与关系修复话术包 · 8 个场景 24 句补救话术<br>
+    单文件网页，手机打开即用，断网也能看
+  </div>
+
+</div>
+<div class="toast" id="toast"></div>
+<script>
+var QZ = [["发现自己说错了话，对方还在跟你聊，你会？",[["先接着聊，等这个话题过去了再说。",[2,1,0]],["当场就纠正：「刚才那句我说错了，我重新说一遍。」",[0,2,2]],["心里记一下，等散场了再单独提。",[1,1,1]]]],["对方追问你为什么那样说，你会？",[["从头讲一遍当时的情况，讲清楚为止。",[1,0,1]],["只说一句原因，剩下留到动作里。",[0,2,2]],["说「我错了」然后等他反应。",[0,1,1]]]],["道歉说出口之后，你会？",[["再补两句，强调自己也不容易。",[0,0,1]],["停在这里，等对方回应，不再加码。",[0,2,1]],["立刻列三条改进计划发过去。",[1,1,2]]]],["补救之后的一两天，你会？",[["主动同步一次处理结果。",[0,2,2]],["等对方来问，他不问就不提。",[2,1,0]],["再发一条消息说明自己当时的心情。",[1,0,0]]]]];
+var RES = [["先解释型","你补救时习惯先讲清楚原因。对方听到的不是认错，是一场说明会，他听完还是不知道自己该放心没有。",2,[[["把解释压到一句","只留一句跟事实有关的原因，其余留到对方追问时再说。"],["先认事实再谈原因","顺序错了，重点就散了：错在哪 → 改了什么 → 原因放后面说。"],["一次只处理一件事","别在一次道歉里附带其它待解决的问题，那会让对方觉得事情没完。"],["认领属于自己的那一份","不要顺手把别人的那部分也揽过来，那不是谦虚，是替人背了事。"]]],"今天挑一件你心里过不去的小事，只发三句话：错在哪、我会改什么、什么时候给你结果。","#5B7FA6"],["补救有度型","你认错、解释、给动作这三步基本稳得住。补的地方是收尾——补救之后的那一次主动更新，往往比道歉本身更决定对方怎么看这件事。",5,[[["认错放在开场那一句","对方听你开场三秒就决定要不要接受你的道歉，别把结论放到收尾。"],["道歉里带一个具体动作","「我明天把数据重新对一遍」比「我以后注意」更让人放心。"],["解释留到对方问","不主动堆信息，对方问了再答，答一句停一下。"],["收尾主动一次","第二天主动同步处理结果，别等对方开口追问。"]]],"今天把一句准备好的道歉改成三段：认错 + 动作 + 时间点，然后发出去看看对方反应。","#4E8C84"],["拖太久型","你总想等一个合适的时机再补救。合适的时机很少来，等着等着，对方已经替你把这件事定了性。",8,[[["当天就认","错在当天说，成本是当场一点尴尬；拖三天，成本是对方已经不指望你了。"],["先处理影响，再处理情绪","对方还在气头上时，先给一个能核对的动作，解释跟在后面。"],["别等对方先开口","你要是不提，这事会在对方心里长成别的东西。"],["一次说完，别分段补","分段补会让对方连续几次回到难堪的现场。"]]],"今天翻一下聊天记录，找出你前阵子一次没回应的失误，写一句当天就能发出去的话。","#B46B3C"]];
+var DIMS = [["speed","认错速度"],["explan","解释分寸"],["fix","修复动作"]];
+var qi = 0, picks = [];
+
+function toast(m){var t=document.getElementById('toast');t.textContent=m;t.classList.add('on');clearTimeout(t._h);t._h=setTimeout(function(){t.classList.remove('on');},1500);}
+function copyText(txt){
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(txt).then(function(){toast('已复制，去聊天框里粘上');},function(){fallback(txt);});
+  } else { fallback(txt); }
+}
+function fallback(txt){
+  var ta=document.createElement('textarea');ta.value=txt;ta.style.position='fixed';ta.style.opacity='0';
+  document.body.appendChild(ta);ta.select();
+  try{document.execCommand('copy');toast('已复制，去聊天框里粘上');}catch(e){toast('长按选中这段文字也可以复制');}
+  document.body.removeChild(ta);
+}
+document.addEventListener('click',function(e){
+  var line=e.target.closest('[data-copy]');
+  if(line){copyText(line.getAttribute('data-copy'));return;}
+  var grp=e.target.closest('[data-group]');
+  if(grp){
+    var id=grp.getAttribute('data-group');
+    var box=document.getElementById(id);
+    var lines=box?box.querySelectorAll('[data-copy]'):[];
+    var arr=[];for(var i=0;i<lines.length;i++){arr.push(lines[i].getAttribute('data-copy'));}
+    copyText(arr.join('\n'));return;
+  }
+  var opt=e.target.closest('.opt');
+  if(opt){pick(parseInt(opt.getAttribute('data-i'),10));return;}
+});
+
+function goSection(id){
+  var el=document.getElementById(id);
+  if(el){window.scrollTo(0,el.offsetTop-8);}
+}
+function showTest(){qi=0;picks=[];renderQ();goSection('s-test');}
+function renderQ(){
+  var wrap=document.getElementById('qwrap');
+  if(qi>=QZ.length){renderResult();return;}
+  var q=QZ[qi];
+  var h='<div class="qcnt">第 <b>'+(qi+1)+'</b> / '+QZ.length+' 题</div>';
+  h+='<div class="qbar"><i style="width:'+Math.round((qi+1)/QZ.length*100)+'%"></i></div>';
+  h+='<div class="qtext">'+q[0]+'</div><div class="opts">';
+  for(var i=0;i<q[1].length;i++){
+    h+='<button class="opt" data-i="'+i+'"><span class="k">'+'ABC'[i]+'</span><span>'+q[1][i][0]+'</span></button>';
+  }
+  h+='</div><button class="backbtn" onclick="goSection(\'s-scenes\')">先返回上面看看话术</button>';
+  wrap.innerHTML=h;
+}
+function pick(i){
+  var q=QZ[qi];
+  if(!q) return;
+  picks.push(q[1][i][1]);
+  qi++;
+  renderQ();
+}
+function renderResult(){
+  var w=0,l=0,it=0;
+  for(var i=0;i<picks.length;i++){w+=picks[i][0];l+=picks[i][1];it+=picks[i][2];}
+  var total=w+l+it;
+  var band=RES[2];
+  for(var j=0;j<RES.length;j++){ if(total<=RES[j][2]) { band=RES[j]; break; } }
+  var mx=QZ.length*2;
+  var h='<div class="res-hero" style="background:linear-gradient(135deg,'+band[5]+'22,'+band[5]+'0A)">';
+  h+='<div class="kicker" style="color:'+band[5]+'">补救踩坑 · 测试结果</div>';
+  h+='<div class="tname" style="color:'+band[5]+'">'+band[0]+'</div>';
+  h+='<div class="oneline" style="color:#4B5C58">'+band[1]+'</div>';
+  h+='</div>';
+  h+='<div class="bars"><div class="bt">三项得分（每项满分 '+mx+'）</div>';
+  var vals=[w,l,it];
+  for(var k=0;k<DIMS.length;k++){
+    var pct=Math.round(vals[k]/mx*100);
+    h+='<div class="barrow"><div class="bl"><span>'+DIMS[k][1]+'</span><span>'+vals[k]+' / '+mx+'</span></div>';
+    h+='<div class="bar"><i style="width:'+pct+'%"></i></div></div>';
+  }
+  h+='<div class="scoretxt">总分 '+total+' / '+(mx*3)+' 分</div>';
+  h+='<div class="scorebar"><i style="width:'+Math.round(total/(mx*3)*100)+'%"></i></div>';
+  h+='</div>';
+  h+='<div class="res-list">';
+  for(var t=0;t<band[3][0].length;t++){
+    h+='<div class="res-item"><div class="ic" style="background:'+band[5]+'">'+(t+1)+'</div><div class="tx"><b>'+band[3][0][t][0]+'</b>'+band[3][0][t][1]+'</div></div>';
+  }
+  h+='</div>';
+  h+='<div class="disc"><b>今天能完成的小练习</b><br>'+band[4]+'</div>';
+  h+='<button class="rbtn p" onclick="showTest()">再测一次</button>';
+  h+='<button class="rbtn s" onclick="goSection(\'s-home\')">回到首页</button>';
+  document.getElementById('qwrap').innerHTML=h;
+}
+</script>
+</body>
+</html>
